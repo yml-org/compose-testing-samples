@@ -1,0 +1,31 @@
+name: Run Paparazzi Record
+on:
+  workflow_dispatch:
+env:
+  GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false"
+jobs:
+  instrumentationTests:
+    name: Screenshot Tests
+    runs-on: macos-11
+    defaults:
+      run:
+        working-directory: ./screenshot-test
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: 11
+          distribution: 'temurin'
+          cache: gradle
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Record Paparazzi
+        run: ./gradlew recordPaparazziDebug
+      - name: Commit snapshot recording
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: "*.png"
+          commit_message: Snapshots updated
