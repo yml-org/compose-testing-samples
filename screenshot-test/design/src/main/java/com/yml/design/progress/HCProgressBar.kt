@@ -27,15 +27,15 @@ fun HCProgressBar() {
     }
 }
 
-// Skipped right now, as screenshot will be blank
-@ShowkaseComposable(skip = true)
-@Preview(
-    name = "progress",
-    group = "elements"
-)
-@Composable
-fun PreviewProgressBar() {
-    HealthCareTheme {
-        HCProgressBar()
-    }
-}
+//// Skipped right now, as screenshot will be blank
+//@ShowkaseComposable(skip = true)
+//@Preview(
+//    name = "progress",
+//    group = "elements"
+//)
+//@Composable
+//fun PreviewProgressBar() {
+//    HealthCareTheme {
+//        HCProgressBar()
+//    }
+//}

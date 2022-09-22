@@ -1,4 +1,4 @@
-name: Run Shot Record
+name: Run Paparazzi Record
 on:
   workflow_dispatch:
 env:
@@ -22,18 +22,8 @@ jobs:
           cache: gradle
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Grant execute permission for action command
-        run: chmod +x scripts/android_execute.sh
-      - name: Record Screenshot
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 28
-          arch: x86
-          profile: pixel_3a
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
-          disable-animations: true
-          working-directory: ./screenshot-test
-          script: scripts/android_execute.sh executeScreenshotTests -Precord
+      - name: Record Paparazzi
+        run: ./gradlew recordPaparazziDebug
       - name: Commit snapshot recording
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

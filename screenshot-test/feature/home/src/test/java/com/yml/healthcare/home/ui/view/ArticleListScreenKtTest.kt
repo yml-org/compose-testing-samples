@@ -4,17 +4,20 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import app.cash.paparazzi.DeviceConfig
 import app.cash.paparazzi.Paparazzi
 import com.yml.healthcare.home.domain.model.Article
-import org.junit.After
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
+import org.junit.*
 
 class ArticleListScreenKtTest {
 
+    private val PERCENT_DIFFERENCE = 90.0
+
     @get:Rule
-    val paparazzi = Paparazzi()
+    val paparazzi = Paparazzi(
+        maxPercentDifference = PERCENT_DIFFERENCE,
+        deviceConfig = DeviceConfig.PIXEL_XL
+    )
 
     @Before
     fun before() {

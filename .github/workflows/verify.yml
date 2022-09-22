@@ -1,4 +1,4 @@
-name: Run Shot Record
+name: Run shot verify
 on:
   workflow_dispatch:
 env:
@@ -24,7 +24,7 @@ jobs:
         run: chmod +x gradlew
       - name: Grant execute permission for action command
         run: chmod +x scripts/android_execute.sh
-      - name: Record Screenshot
+      - name: Verify screenshot
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 28
@@ -33,9 +33,9 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           disable-animations: true
           working-directory: ./screenshot-test
-          script: scripts/android_execute.sh executeScreenshotTests -Precord
-      - name: Commit snapshot recording
-        uses: stefanzweifel/git-auto-commit-action@v4
+          script: scripts/android_execute.sh executeScreenshotTests
+      - uses: actions/upload-artifact@v2
+        if: always()
         with:
-          file_pattern: "*.png"
-          commit_message: Snapshots updated
+          name: Reports
+          path: app/build/reports/

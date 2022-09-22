@@ -68,7 +68,7 @@ shot {
      */
     tolerance =  0.1
 
-    showOnlyFailingTestsInReports = true
+    showOnlyFailingTestsInReports = false
 }
 
 dependencies {

@@ -108,48 +108,48 @@ fun HCToolBar(
 }
 
 
-@Preview(
-    name = "title-left",
-    group = "toolbar"
-)
-@Composable
-fun PreviewToolBarTitleAndLeftIcon() {
-    HealthCareTheme {
-        HCToolBar(
-            title = stringResource(id = R.string.preview_home),
-            leftIcon = R.drawable.ic_menu_burger
-        )
-    }
-}
-
-@Preview(
-    name = "title",
-    group = "toolbar"
-)
-@Composable
-fun PreviewToolBar() {
-    HealthCareTheme {
-        HCToolBar(
-            title = stringResource(id = R.string.preview_home),
-            rightIcon = R.drawable.ic_search,
-            leftIcon = R.drawable.ic_menu_burger
-        )
-    }
-}
-
-@ShowkaseComposable()
-@Preview(
-    name = "image",
-    group = "toolbar"
-)
-@Composable
-fun PreviewToolBarImage() {
-
-    HealthCareTheme {
-        HCToolBar(
-            headerImage = R.drawable.ic_profile,
-            rightIcon = R.drawable.ic_search,
-            leftIcon = R.drawable.ic_menu_burger
-        )
-    }
-}
+//@Preview(
+//    name = "title-left",
+//    group = "toolbar"
+//)
+//@Composable
+//fun PreviewToolBarTitleAndLeftIcon() {
+//    HealthCareTheme {
+//        HCToolBar(
+//            title = stringResource(id = R.string.preview_home),
+//            leftIcon = R.drawable.ic_menu_burger
+//        )
+//    }
+//}
+//
+//@Preview(
+//    name = "title",
+//    group = "toolbar"
+//)
+//@Composable
+//fun PreviewToolBar() {
+//    HealthCareTheme {
+//        HCToolBar(
+//            title = stringResource(id = R.string.preview_home),
+//            rightIcon = R.drawable.ic_search,
+//            leftIcon = R.drawable.ic_menu_burger
+//        )
+//    }
+//}
+//
+//@ShowkaseComposable()
+//@Preview(
+//    name = "image",
+//    group = "toolbar"
+//)
+//@Composable
+//fun PreviewToolBarImage() {
+//
+//    HealthCareTheme {
+//        HCToolBar(
+//            headerImage = R.drawable.ic_profile,
+//            rightIcon = R.drawable.ic_search,
+//            leftIcon = R.drawable.ic_menu_burger
+//        )
+//    }
+//}

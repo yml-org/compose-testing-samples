@@ -88,20 +88,20 @@ fun CardFilled() {
         )
     }
 }
-
-
-@Preview(
-    name = "no-tags",
-    group = "card"
-)
-@Composable
-fun CardNoTags() {
-    HealthCareTheme {
-        HCard(
-            title = "Here is the title",
-            description = "this is description \nSecond line continued... Some text\nThird Line",
-        )
-    }
-}
+//
+//
+//@Preview(
+//    name = "no-tags",
+//    group = "card"
+//)
+//@Composable
+//fun CardNoTags() {
+//    HealthCareTheme {
+//        HCard(
+//            title = "Here is the title",
+//            description = "this is description \nSecond line continued... Some text\nThird Line",
+//        )
+//    }
+//}
 
 

@@ -38,9 +38,9 @@ class ShotTests : ScreenshotTest {
     fun tests(
         @TestParameter(valuesProvider = Previews::class)
         componentPreview: ComponentPreview,
-        @TestParameter(value = ["en", "ar"])
+        @TestParameter(value = ["en"])
         locale: String,
-        @TestParameter(value = ["light", "dark"])
+        @TestParameter(value = ["light"])
         uiMode: String
     ) {
 

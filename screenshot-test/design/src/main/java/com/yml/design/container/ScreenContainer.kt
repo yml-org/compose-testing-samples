@@ -77,27 +77,27 @@ fun HCToolBarScreen(
     }
 }
 
-@Preview(
-    name = "toolbar-screen",
-    group = "container",
-    locale = "en"
-)
-@Composable
-fun PreviewFullScreen() {
-    HealthCareTheme {
-        HCToolBarScreen(
-            title = "Search",
-            leftIcon = R.drawable.ic_menu_burger
-        ) { modifier, _ ->
-            ErrorWidget(
-                modifier = modifier.fillMaxSize(),
-                data = ErrorData(
-                    title = stringResource(id = R.string.preview_error_title),
-                    description = stringResource(id = R.string.preview_error_description),
-                    button = stringResource(id = R.string.preview_retry),
-                    icon = R.drawable.ic_home
-                )
-            )
-        }
-    }
-}
+//@Preview(
+//    name = "toolbar-screen",
+//    group = "container",
+//    locale = "en"
+//)
+//@Composable
+//fun PreviewFullScreen() {
+//    HealthCareTheme {
+//        HCToolBarScreen(
+//            title = "Search",
+//            leftIcon = R.drawable.ic_menu_burger
+//        ) { modifier, _ ->
+//            ErrorWidget(
+//                modifier = modifier.fillMaxSize(),
+//                data = ErrorData(
+//                    title = stringResource(id = R.string.preview_error_title),
+//                    description = stringResource(id = R.string.preview_error_description),
+//                    button = stringResource(id = R.string.preview_retry),
+//                    icon = R.drawable.ic_home
+//                )
+//            )
+//        }
+//    }
+//}

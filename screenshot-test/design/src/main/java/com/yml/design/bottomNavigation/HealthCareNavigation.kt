@@ -45,50 +45,50 @@ fun <T : BottomNavDestination> HealthCareBottomNavigation(
     }
 }
 
-@Preview(
-    name = "home_selected",
-    group = "bottom_bar"
-)
-@Composable
-fun BottomBarPreviewHomeSelection() {
-    val items = createMockBottomNavItems()
-    HealthCareTheme {
-        HealthCareBottomNavigation(
-            isSelected = { items.first() == it },
-            items = items,
-            navigateTo = {})
-    }
-}
-
-@Preview(
-    name = "search_selected",
-    group = "bottom_bar"
-)
-@Composable
-fun BottomBarPreviewSearchSelection() {
-    val items = createMockBottomNavItems()
-    HealthCareTheme {
-        HealthCareBottomNavigation(
-            isSelected = { items[1] == it },
-            items = items,
-            navigateTo = {})
-    }
-}
-
-@Preview(
-    name = "profile_selected",
-    group = "bottom_bar"
-)
-@Composable
-fun BottomBarPreviewProfileSelection() {
-    val items = createMockBottomNavItems()
-    HealthCareTheme {
-        HealthCareBottomNavigation(
-            isSelected = { items.last() == it },
-            items = items,
-            navigateTo = {})
-    }
-}
+//@Preview(
+//    name = "home_selected",
+//    group = "bottom_bar"
+//)
+//@Composable
+//fun BottomBarPreviewHomeSelection() {
+//    val items = createMockBottomNavItems()
+//    HealthCareTheme {
+//        HealthCareBottomNavigation(
+//            isSelected = { items.first() == it },
+//            items = items,
+//            navigateTo = {})
+//    }
+//}
+//
+//@Preview(
+//    name = "search_selected",
+//    group = "bottom_bar"
+//)
+//@Composable
+//fun BottomBarPreviewSearchSelection() {
+//    val items = createMockBottomNavItems()
+//    HealthCareTheme {
+//        HealthCareBottomNavigation(
+//            isSelected = { items[1] == it },
+//            items = items,
+//            navigateTo = {})
+//    }
+//}
+//
+//@Preview(
+//    name = "profile_selected",
+//    group = "bottom_bar"
+//)
+//@Composable
+//fun BottomBarPreviewProfileSelection() {
+//    val items = createMockBottomNavItems()
+//    HealthCareTheme {
+//        HealthCareBottomNavigation(
+//            isSelected = { items.last() == it },
+//            items = items,
+//            navigateTo = {})
+//    }
+//}
 
 fun createMockBottomNavItems(): List<BottomNavDestination> {
     return mutableListOf<BottomNavDestination>().apply {

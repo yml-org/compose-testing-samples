@@ -77,25 +77,25 @@ fun ErrorWidget(
     }
 }
 
-@Preview(
-    group = "error",
-    name = "error-screen",
-    showSystemUi = true,
-    showBackground = true,
-    device = Devices.PIXEL_4_XL,
-    uiMode = UI_MODE_NIGHT_YES
-)
-@Composable
-fun ErrorWidgetPreview() {
-
-    HealthCareTheme {
-        ErrorWidget(
-            modifier = Modifier.fillMaxWidth(), data = ErrorData(
-                title = stringResource(id = R.string.preview_error_title),
-                description = stringResource(id = R.string.preview_error_description),
-                button = stringResource(id = R.string.preview_retry),
-                icon = R.drawable.ic_home
-            )
-        )
-    }
-}
+//@Preview(
+//    group = "error",
+//    name = "error-screen",
+//    showSystemUi = true,
+//    showBackground = true,
+//    device = Devices.PIXEL_4_XL,
+//    uiMode = UI_MODE_NIGHT_YES
+//)
+//@Composable
+//fun ErrorWidgetPreview() {
+//
+//    HealthCareTheme {
+//        ErrorWidget(
+//            modifier = Modifier.fillMaxWidth(), data = ErrorData(
+//                title = stringResource(id = R.string.preview_error_title),
+//                description = stringResource(id = R.string.preview_error_description),
+//                button = stringResource(id = R.string.preview_retry),
+//                icon = R.drawable.ic_home
+//            )
+//        )
+//    }
+//}

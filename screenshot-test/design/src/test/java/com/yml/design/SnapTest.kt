@@ -23,7 +23,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
-const val PERCENT_DIFFERENCE = 0.01
+const val PERCENT_DIFFERENCE = 0.9
 
 class ComponentPreview(
     private val skBrowser: ShowkaseBrowserComponent

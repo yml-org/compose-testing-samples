@@ -8,11 +8,9 @@ import app.cash.paparazzi.Paparazzi
 import com.yml.healthcare.home.domain.model.Article
 import com.yml.healthcare.home.domain.model.Blog
 import com.yml.healthcare.home.domain.model.HomeDataModel
-import org.junit.After
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
+import org.junit.*
 
+@Ignore
 class LoadedHomeKtTest {
 
     @get:Rule

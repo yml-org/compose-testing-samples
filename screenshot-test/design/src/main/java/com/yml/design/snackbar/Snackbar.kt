@@ -40,25 +40,25 @@ fun SnackMessage(
 }
 
 
-@Preview
-@Composable
-@ShowkaseComposable("success", "snack")
-fun SnackSuccessPreview() = HealthCareTheme {
-    SnackMessage(description = stringResource(id = R.string.preview_snack_success))
-}
-
-
-@Composable
-@Preview(
-    name = "error",
-    group = "snack"
-)
-fun SnackErrorPreview() = HealthCareTheme {
-    SnackMessage(
-        description = stringResource(id = R.string.preview_snack_error),
-        bgColor = MaterialTheme.colors.error
-    )
-}
+//@Preview
+//@Composable
+//@ShowkaseComposable("success", "snack")
+//fun SnackSuccessPreview() = HealthCareTheme {
+//    SnackMessage(description = stringResource(id = R.string.preview_snack_success))
+//}
+//
+//
+//@Composable
+//@Preview(
+//    name = "error",
+//    group = "snack"
+//)
+//fun SnackErrorPreview() = HealthCareTheme {
+//    SnackMessage(
+//        description = stringResource(id = R.string.preview_snack_error),
+//        bgColor = MaterialTheme.colors.error
+//    )
+//}
 
 class ThemeProvider : PreviewParameterProvider<Boolean> {
     override val count: Int

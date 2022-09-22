@@ -24,26 +24,26 @@ fun HCButton(
     }
 }
 
-@Preview(
-    name = "default",
-    group = "button"
-)
-@Composable
-fun PreviewButton() {
-    HealthCareTheme {
-        HCButton(title = stringResource(id = R.string.preview_retry))
-    }
-}
-
-@Preview(
-    name = "custom",
-    group = "button"
-)
-@Composable
-fun PreviewButtonCustom() {
-    HealthCareTheme {
-        HCButton(
-            title = stringResource(id = R.string.preview_retry)
-        )
-    }
-}
+//@Preview(
+//    name = "default",
+//    group = "button"
+//)
+//@Composable
+//fun PreviewButton() {
+//    HealthCareTheme {
+//        HCButton(title = stringResource(id = R.string.preview_retry))
+//    }
+//}
+//
+//@Preview(
+//    name = "custom",
+//    group = "button"
+//)
+//@Composable
+//fun PreviewButtonCustom() {
+//    HealthCareTheme {
+//        HCButton(
+//            title = stringResource(id = R.string.preview_retry)
+//        )
+//    }
+//}
